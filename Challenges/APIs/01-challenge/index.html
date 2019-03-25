@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<!--
+If time, give challenge (assign remaining challenges to do over the weekend)
+
+Challenge 1:
+Make four buttons (People, Planets, Starships, Species) with, on the click of each button, a list of the names of each respective entity is displayed.
+
+API URLs = 
+  https://swapi.co/api/people
+  https://swapi.co/api/planets
+  https://swapi.co/api/starships
+  https://swapi.co/api/species
+
+Challenge 2:
+Using the Star Wars API URL for people, have a dropdown of character names where, on the click of the individual character, the names of movies that they are in are displayed.
+
+Challenge 3:
+Race the starships!  Using the Star Wars API URL for starships, create two dropdowns where you are able to click on the name of an individual starship.  After both dropdowns are selected, have a button called "Race!" that, when clicked, the winner is displayed.
+
+-->
+
+<body>
+    <nav class='navbar'>
+        <div class='buttons'>
+
+            <button class='peoplebtn'>People</button>
+            <button class='planetsbtn'>Planets</button>
+            <button class='starshipsbtn'>Starships</button>
+            <button class='speciesbtn'>Species</button>
+            <button class='race'>Starship Race</button>
+
+        </div>
+        <div class='dropdowns'>
+
+
+            <button onclick="ddmovielist()" class="dropbtn">Movie List  <i class="arrow down"></i></button>
+            <div id="myDropdown1" class="dropdown-content">
+                
+            </div>
+
+            <button onclick="ddcharlist()" class="dropbtn">Characters Linked to Movies <i class="arrow down"></i></button>
+            <div id="myDropdown2" class="dropdown-content2">
+                
+            </div>
+
+
+
+        </div>
+    </nav>
+    <section class='main' id='main'>
+
+        <div id="popup" class="peopleModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class='peopleContent'>
+
+                </div>
+            </div>
+        </div>
+        <div id="popup" class="planetsModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class='planetsContent'>
+
+                </div>
+            </div>
+        </div>
+        <div id="popup" class="starshipsModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class='starshipContent'>
+
+                </div>
+            </div>
+        </div>
+        <div id="popup" class="speciesModal">
+            <div class="modal-content">
+                <span id='close' class="close">&times;</span>
+                <div class='speciesContent'>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class='race'>
+
+    </section>
+    <footer id='footer'>
+
+    </footer>
+
+
+
+    <script src="js.js"></script>
+</body>
+
+</html>

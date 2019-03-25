@@ -1,0 +1,46 @@
+body{
+    margin:0;
+}
+
+/***Navbar***/
+
+#navbar{
+    
+    background-color: pink;
+    border: 2px solid, hotpink;
+}
+ul {
+    margin-left:400px;
+    margin:0;
+}
+li {
+    display: inline-block; /*whats a list into a line*/
+    padding: 0px 20px 0px 20px;
+
+}
+li:hover{
+    background:red;
+    border:2px solid red;
+    border-radius: 5px;
+}
+li a{ 
+    color:white;
+    text-decoration: none; /*removes underline*/
+    /*can change fonts too*/
+}
+li a:hover{
+    color:blue;
+}
+
+/***header****/
+
+#header{
+    background-color: teal;
+    height: 300px; 
+    width:100%
+}
+.wrapper{
+    padding: 6em;
+    text-align: center;
+    color:white;
+}
